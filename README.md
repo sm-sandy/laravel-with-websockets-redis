@@ -12,7 +12,7 @@ Ensure the following prerequisites are met before setting up the project:
 -   Composer installed
 -   Redis server set up and accessible (https://redis.io/docs/install/install-redis)
 
-## Installation:
+## Installation
 
 1. Clone the repository: `git clone https://github.com/sm-sandy/laravel-with-websockets-redis.git`
 2. Install dependencies: `composer install`
@@ -25,35 +25,35 @@ Ensure the following prerequisites are met before setting up the project:
 
 8. Run the redis server (On your OS): `sudo service redis-server start`
 
-## Usage:
+## Usage
 
-## Development Server:
+## Development Server
 
-Visit `http://localhost:8000` to access the Laravel development server.
+    Visit `http://localhost:8000` to access the Laravel development server.
 
-Access the WebSocket Dashboard at `http://localhost:8000/websockets-dashboard` and connect to the WebSocket server.
+    Access the WebSocket Dashboard at `http://localhost:8000/websockets-dashboard` and connect to the WebSocket server.
 
-## User Authentication:
+## User Authentication
 
-Log in with Postman using the following endpoint: `http://localhost:8000/api/login`
+    Log in with Postman using the following endpoint: `http://localhost:8000/api/login`
 
-Use the default credentials:
+    Use the default credentials:
 
-Email: `sandy@gmail.com`
-Password: `12345678`
-OR
+    Email: `sandy@gmail.com`
+    Password: `12345678`
+    OR
 
-Choose any email from the database and use the password `12345678`.
+    Choose any email from the database and use the password `12345678`.
 
-If the credentials are valid, the API will return an authentication token.
+    If the credentials are valid, the API will return an authentication token.
 
-## Retrieve User Data:
+## Retrieve User Data
 
-With the obtained token, make a GET request to `http://localhost:8000/api/users`.
+    With the obtained token, make a GET request to `http://localhost:8000/api/users`.
 
-The response will include a dataset of 20,000 user records with caching applied.
+    The response will include a dataset of 20,000 user records with caching applied.
 
-## WebSocket Server:
+## WebSocket Server
 
-The WebSocket server will broadcast the dataset to connected clients in real-time.
-By following these steps, you can explore the Laravel development server, authenticate users, retrieve user data, and experience real-time updates through the WebSocket server.
+    The WebSocket server will broadcast the dataset to connected clients in real-time.
+    By following these steps, you can explore the Laravel development server, authenticate users, retrieve user data, and experience real-time updates through the WebSocket server.
