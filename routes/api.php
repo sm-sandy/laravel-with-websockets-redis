@@ -21,12 +21,3 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/users', [AuthController::class, 'index']);
 });
-
-Route::get('/user-event', function () {
-    $user = [
-        "id" => 1,
-        "name" => "sandy",
-    ];
-    event(new UserDataEvent($user));
-    return null;
-});
