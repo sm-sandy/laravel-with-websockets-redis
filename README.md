@@ -57,3 +57,7 @@ Ensure the following prerequisites are met before setting up the project:
 
     The WebSocket server will broadcast the dataset to connected clients in real-time.
     By following these steps, you can explore the Laravel development server, authenticate users, retrieve user data, and experience real-time updates through the WebSocket server.
+
+## Video link
+
+https://www.awesomescreenshot.com/video/23789401?key=4094cf962a18f5ead649e23de5771fd9
