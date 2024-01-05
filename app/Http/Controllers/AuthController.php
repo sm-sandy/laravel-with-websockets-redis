@@ -36,7 +36,7 @@ class AuthController extends Controller
 
         if (isset($cashedData)) {
             event(new UserDataEvent($cashedData));
-            return response()->json($cashedData);
+            return $cashedData;
         } else {
             $user = User::all();
             Redis::set('userData', $user);
