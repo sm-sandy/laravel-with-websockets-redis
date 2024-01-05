@@ -2,13 +2,9 @@
 
 ## Laravel Sanctum WebSocket Server with Redis
 
----
-
 This repository contains a Laravel application that utilizes Sanctum authentication for API endpoints, integrates a WebSocket server using Laravel WebSockets, and leverages Redis as both a queue driver and caching mechanism.
 
 ## Prerequisites
-
----
 
 Ensure the following prerequisites are met before setting up the project:
 
@@ -17,8 +13,6 @@ Ensure the following prerequisites are met before setting up the project:
 -   Redis server set up and accessible (https://redis.io/docs/install/install-redis)
 
 ## Installation:
-
----
 
 1. Clone the repository: `git clone https://github.com/sm-sandy/laravel-with-websockets-redis.git`
 2. Install dependencies: `composer install`
@@ -33,15 +27,13 @@ Ensure the following prerequisites are met before setting up the project:
 
 ## Usage:
 
----
-
-1. ## Development Server:
+## Development Server:
 
 Visit `http://localhost:8000` to access the Laravel development server.
 
 Access the WebSocket Dashboard at `http://localhost:8000/websockets-dashboard` and connect to the WebSocket server.
 
-2. ## User Authentication:
+## User Authentication:
 
 Log in with Postman using the following endpoint: `http://localhost:8000/api/login`
 
@@ -55,13 +47,13 @@ Choose any email from the database and use the password `12345678`.
 
 If the credentials are valid, the API will return an authentication token.
 
-3. ## Retrieve User Data:
+## Retrieve User Data:
 
 With the obtained token, make a GET request to `http://localhost:8000/api/users`.
 
 The response will include a dataset of 20,000 user records with caching applied.
 
-4. ## WebSocket Server:
+## WebSocket Server:
 
 The WebSocket server will broadcast the dataset to connected clients in real-time.
 By following these steps, you can explore the Laravel development server, authenticate users, retrieve user data, and experience real-time updates through the WebSocket server.
